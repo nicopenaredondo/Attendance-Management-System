@@ -78,3 +78,25 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+/*
+|--------------------------------------------------------------------------
+| Installation Filter
+|--------------------------------------------------------------------------
+|
+| The installation filter will detect if the web application is not installed
+|
+|
+*/
+
+Route::filter('install',function(){
+
+	$hasUser = DB::table('users')->count();
+
+	if($hasUser === 0 ){
+		return Redirect::route('install');
+	}else{
+		return Redirect::route('login');
+	}
+
+});

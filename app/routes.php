@@ -21,10 +21,10 @@
 */
 
 
-Route::get('/', function()
+Route::get('/',array('before' => 'install', function()
 {
 	return View::make('hello');
-});
+}));
 
 foreach (glob(dirname(__FILE__)."/routes/*.php") as $filename)
 {
