@@ -17,7 +17,7 @@ Installation Wizard - Attendance Management System
                 {{ Form::open(array('route' => 'install.process' ,'id' => 'wizard-validate','autocomplete' => 'off')) }}
                 <div class="tab-content">
                     <div class="tab-pane active" id="valid1">
-                    <h2><strong>Company</strong> Information</h2>
+                        <h2><strong>Company</strong> Information</h2>
                         <hr>
                         <div class="row-form">
                             <div class="col-md-6">
@@ -30,7 +30,7 @@ Installation Wizard - Attendance Management System
                                 <div class="form-group">
                                 <label>Type of Service</label>
                                 <select name="company_service" id="" class="form-control" id="company_service">
-                                    <option value="">-</option>
+                                    <option value="">-</option>a
                                     <option value="Agriculture">Agriculture</option>
                                     <option value="Accounting">Accounting</option>
                                     <option value="Advertising">Advertising</option>
@@ -102,7 +102,6 @@ Installation Wizard - Attendance Management System
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="tab-pane" id="valid2">
                         <h2><strong>Administrator</strong> Information</h2>
@@ -111,124 +110,79 @@ Installation Wizard - Attendance Management System
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Username</label>
-                                    <input type="text" class="form-control" name="username">
+                                    <input type="text" class="form-control" name="username" id="username">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input type="text" class="form-control" name="password">
+                                    <input type="password" class="form-control" name="password" id="password">
                                 </div>
                             </div>
                         </div>
+
                         <div class="row-form">
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>First name</label>
-                                    <input type="text" class="form-control" name="first_name">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" name="name" id="name">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Middle name</label>
-                                    <input type="text" class="form-control" name="middle_name">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Last name</label>
-                                    <input type="text" class="form-control" name="last_name">
+                                    <label>Email</label>
+                                    <input type="text" class="form-control" name="email" id="email">
                                 </div>
                             </div>
                         </div>
-
-
-
 
                     </div>
-                     <div class="tab-pane" id="valid3">
+                    <div class="tab-pane" id="valid3">
                         <h2><strong>Review</strong> Details</h2>
                         <hr>
-                        <h3>Company Information</h3>
-
-                        <div class="row-form">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Company Name</label>
-                                    <p class="text-muted">Highly Succeed Inc.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Type of Service</label>
-                                    <p class="text-muted">Technology</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row-form">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Company Description</label>
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, dolorem, nisi, eligendi necessitatibus in nobis numquam minima odit perferendis nam illo laboriosam suscipit quibusdam a quae voluptates nostrum nulla quasi!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Company Address</label>
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, autem impedit porro et reiciendis nesciunt. Repellendus, iure, esse, pariatur consequuntur nobis minus fugit accusantium deleniti atque dolor magni quisquam sequi!</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3>Administrator Information</h3>
-                        <div class="row-form">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>First Name</label>
-                                    <p class="text-muted">Nico</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Middle Name</label>
-                                    <p class="text-muted">Romero</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Last Name</label>
-                                    <p class="text-muted">Penaredondo</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row-form">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Birthday</label>
-                                    <p class="text-muted">January 15,1993</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Contact Number</label>
-                                    <p class="text-muted">+63926474658</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Address</label>
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, facere quia minus nesciunt blanditiis velit unde deleniti cum harum veniam ad dolore sit sunt est alias libero cupiditate quis asperiores.</p>
-                                </div>
-                            </div>
-
-                        </div>
+                        <table class="table table-hover">
+                            <thead>
+                                <th colspan="4">Company Information</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>Name</b></td>
+                                    <td><i>Bayaw Incorporated</i></td>
+                                    <td><b>Type of Service</b></td>
+                                    <td><i>Illegal Drugs and Shit</i></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Address</b></td>
+                                    <td><i>4281 Fieldcrest Road New York, NY 10013</i></td>
+                                    <td><b>Description</b></td>
+                                    <td><i>4281 Fieldcrest Road New York, NY 10013</i></td>
+                                </tr>
+                            </tbody>
+                            <thead>
+                                <th colspan="4">Administrator Information</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>Username</b></td>
+                                    <td><i>nico.penaredondo</i></td>
+                                    <td><b>Password</b></td>
+                                    <td><i>(Your Fucking Password)</i></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Name</b></td>
+                                    <td><i>Nico R. Penaredondo</i></td>
+                                    <td><b>Email</b></td>
+                                    <td><i>nico.penaredondo@gmail.com</i></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <ul class="pager wizard">
-                        <li class="previous disabled"><a href="#" class="btn btn-default tabindex=-1">Previous</a></li>
-                        <li class="next"><a href="#" class="btn btn-default">Next</a></li>
-                        <li class="finish" style="display: none;"><button class="btn btn-success">Submit</button></li>
-                    </ul>
+                </div>
+                <ul class="pager wizard">
+                    <li class="previous disabled"><a href="#" class="btn btn-default tabindex=-1">Previous</a></li>
+                    <li class="next"><a href="#" class="btn btn-default">Next</a></li>
+                    <li class="finish" style="display: none;"><button class="btn btn-success">Submit</button></li>
+                </ul>
                 </div>
                 {{ Form::close() }}
             </div>

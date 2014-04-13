@@ -16,46 +16,43 @@ $(document).ready(function(){
     if($("#form-wizard2").length > 0){
 
         var $validator = $("#wizard-validate").validate({
-		  rules: {
-            company_name:{
-                required    : true,
-                minlength   : 3,
-                maxlength   : 32
-            },
-            company_address:{
-                required    : true,
-                maxlength   : 180,
-            },
-            company_description:{
-                required    : true,
-                maxlength   : 2000
-            },
-            company_service:{
-                required    : true
-            },
-            password: {
-                required: true,
-                minlength: 5,
-                maxlength: 10
-            },
-            password_confirmation: {
-                required: true,
-                minlength: 5,
-                maxlength: 10,
-                equalTo: "#password"
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            name: {
-                required: true,
-                maxlength: 10
-            },
-            about: {
-               required: true
+    		rules: {
+                company_name:{
+                    required    : true,
+                    minlength   : 3,
+                    maxlength   : 32
+                },
+                company_address:{
+                    required    : true,
+                    maxlength   : 180,
+                },
+                company_description:{
+                    required    : true,
+                    maxlength   : 2000
+                },
+                company_service:{
+                    required    : true
+                },
+                username: {
+                    required    : true,
+                    minlength   : 6,
+                    maxlength   : 32
+                },
+                password: {
+                    required    : true,
+                    minlength   : 6,
+                    maxlength   : 32
+                },
+                name: {
+                    required    : true,
+                    minlength   : 3,
+                    maxlength   : 64
+                },
+                email: {
+                    required    : true,
+                    email       : true
+                }
             }
-		  }
 		});
 
 	  	$('#form-wizard2').bootstrapWizard({
